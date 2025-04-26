@@ -1,0 +1,5 @@
+Sergeev Sergei Sergeevich 04.04.2010 5 5 5 5 5 25
+Petrov Petr Petrovich 01.01.2010 4 4 4 5 5 22
+Evgeniev Evgenii Evgenievich 05.05.2010 4 4 4 4 4 20
+Ivanov Ivan Ivanovich 02.02.2010 5 5 3 3 3 19
+Nikolaev Nikolai Nikolaevich 03.03.2010 3 3 3 3 3 15
