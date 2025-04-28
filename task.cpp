@@ -45,6 +45,22 @@ bool isLess(const Student& a, const Student& b)
     return a.sum < b.sum;
 }
 
+void ex2SortStudents(std::vector<Student>& students)
+{
+    for (size_t i = 0; i < students.size(); ++i)
+    {
+        for (size_t j = 0; j < students.size() - i - 1; ++j)
+        {
+            if (isLess(students[j], students[j + 1]))
+            {
+                Student tmp = students[j];
+                students[j] = students[j + 1];
+                students[j + 1] = tmp;
+            }
+        }
+    }
+}
+
 
 void ex2()
 {
@@ -90,20 +106,7 @@ void ex2()
             }
         }
 
-
-        for (size_t i = 0; i < students.size(); ++i)
-        {
-            for (size_t j = 0; j < students.size() - i - 1; ++j)
-            {
-                if (isLess(students[j], students[j + 1]))
-                {
-                    Student tmp = students[j];
-                    students[j] = students[j + 1];
-                    students[j + 1] = tmp;
-                }
-            }
-        }
-
+        ex2SortStudents(students);
 
         for (int i = 0; i < group; ++i)
         {
