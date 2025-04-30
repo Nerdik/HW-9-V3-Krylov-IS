@@ -7,7 +7,8 @@
 
 // 3 % 3 = 0 (Bubble sorting)
 // Exercise 1 function
-void bubbleSort(std::vector<int>& v)
+template <typename T>
+void bubbleSort(T v)
 {
     for (size_t i = 0; i < v.size(); ++i)
     {
